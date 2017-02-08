@@ -220,6 +220,15 @@ img.logo {
   }
 }
 
+header h2 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+header h4 {
+  padding: 5px;
+}
+
 #btn-header {
   background-color: #F16600;
   color: #fff;
