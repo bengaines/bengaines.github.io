@@ -1,7 +1,5 @@
 /*!
- * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Ben Gaines - Freelance Web Developer (http://bengaines.me/)
  */
 
 /* ----- Global Styles ----- */
@@ -65,6 +63,42 @@ h2 {
 
 hr.small {
     max-width: 100px;
+}
+
+/* ----- Large Screen Navigation ----- */
+
+#large-screen-nav {
+  display: none;
+}
+
+@media(min-width:768px) {
+  #large-screen-nav {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 90%;
+    z-index: 1;
+  }
+
+  #large-screen-nav > li {
+    display: inline-block;
+  }
+
+  #large-screen-nav > li > a {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+
+  #large-screen-nav > li > a:hover {
+    color: #FFD180;
+    text-decoration: none;
+  }
 }
 
 /* ----- Side Menu ----- */
@@ -194,7 +228,7 @@ img.logo {
 
 #home-logo {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: 12%;
   height: auto;
 }
@@ -213,11 +247,57 @@ img.logo {
   }
 }
 
+@media (min-width: 600px) {
+  #home-logo {
+    width: 7.5%;
+    height: auto;
+  }
+}
+
+@media (min-width: 740px) {
+  #home-logo {
+    width: 6%;
+    height: auto;
+  }
+}
+
 @media (min-width: 1000px) {
   #home-logo {
     width: 4%;
     height: auto;
   }
+}
+
+/* phone number at top center of header on mobile */
+.header-phone {
+  position: absolute;
+  height: 45px;
+  width: 143.43px;
+  top: 35px;
+  left: 50%;
+  z-index: 1;
+  margin-top: -22.5px;
+  margin-left: -71.715px;
+}
+
+/* shift phone # to the right  on screens >= 768px */
+@media(min-width: 768px) {
+  .header-phone {
+    top: 49.5px;
+    left: 85%;
+  }
+}
+
+/* style header phone icon and number */
+.header-phone i, .header-phone a {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.header-phone a:hover {
+  color: #FFD180;
+  text-decoration: none;
 }
 
 header h2 {
@@ -242,9 +322,36 @@ header h4 {
 }
 
 #btn-header {
-  background-color: #F16600;
+  background-color: #F57C00;
   color: #fff;
 }
+
+#btn-header:hover {
+  background-color: #FF9100;
+}
+
+/* styling homearrow class */
+.homearrow {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+@media screen and (min-width: 60em) {
+  .homearrow {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .arrow-down {
+    height: 59px;
+    width: 11px;
+  }
+}
+
 
 /* ----- About ----- */
 
@@ -333,8 +440,13 @@ footer p {
     color: #004D40;
 }
 
-footer a {
+footer li > i, footer li > a {
     color: #FF8A33;
+}
+
+footer a:hover {
+  color: #FF6F00;
+  text-decoration: none;
 }
 
 #to-top {

@@ -36,9 +36,26 @@
 
     <!-- Navigation -->
     <a href="#top"><img id="home-logo" class="logo pull-left" src="img/bg_flat_logo.svg"></a>
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <ul id="large-screen-nav">
+        <li>
+            <a class="nav-down" href="#about">About</a>
+        </li>
+        <li>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="#services">Services</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+    <div class="header-phone">
+      <i class="fa fa-phone fa-fw"></i><a class="vertical-center" href="tel:12514229279">(251)422-9279</a>
+    </div>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle navbar-toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
+        <ul class="nav navbar-nav sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
                 <a href="#top" onclick=$("#menu-close").click();><img class="logo" src="img/bg_flat_logo.svg"></a>
@@ -65,7 +82,13 @@
             <h4>I'm Ben a freelance web developer based in Mobile, AL.
               I bring mobility to Mobile web development!</h4>
             <br>
-            <a href="#about" id="btn-header" class="btn btn-lg">Find Out More</a>
+            <form method="post" action="mailto:bengaines92@gmail.com" >
+              <input id="btn-header" class="btn btn-lg" type="submit" value="Email" />
+            </form>
+            <div class="homearrow">
+              <h4>About</h4>
+              <span class="arrow-down">&#8595;</span>
+            </div>
         </div>
     </header>
 
@@ -156,7 +179,7 @@
                                     <strong>Build Websites</strong>
                                 </h4>
                                 <p>Let me build the solution for your buisness's needs.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="services.html#build-websites" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -169,7 +192,7 @@
                                     <strong>Content Creation</strong>
                                 </h4>
                                 <p>Through logo design and photography we can spread your brand.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="services.html#content-creation" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -182,7 +205,7 @@
                                     <strong>Internet Marketing</strong>
                                 </h4>
                                 <p>With a combination of AdWords and SEO let me help people find your website.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="services.html#internet-marketing" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -195,7 +218,7 @@
                                     <strong>Maintenance</strong>
                                 </h4>
                                 <p>Improve or upgrade existing sites.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="services.html#maintenance" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -210,39 +233,39 @@
 
     <!-- Footer -->
     <section id="contact" class="contact">
-    <footer class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Ben Gaines</strong>
-                    </h4>
-                    <p>230 Rochester Rd
-                        <br>Mobile, AL 36608</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i><a href="tel:12514229279">(251) 422-9279</a></li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:bengaines92@gmail.com">bengaines92@gmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.linkedin.com/in/ben-gaines-82bb6349"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/bengaines"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">built by me | Copyright &copy; 2017</p>
-                </div>
-            </div>
-        </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
-  </section>
+      <footer class="contact">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1 text-center">
+                      <h4><strong>Ben Gaines</strong>
+                      </h4>
+                      <p>230 Rochester Rd
+                          <br>Mobile, AL 36608</p>
+                      <ul class="list-unstyled">
+                          <li><i class="fa fa-phone fa-fw"></i><a href="tel:12514229279">(251) 422-9279</a></li>
+                          <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:bengaines92@gmail.com">bengaines92@gmail.com</a>
+                          </li>
+                      </ul>
+                      <br>
+                      <ul class="list-inline">
+                          <li>
+                              <a href="https://www.linkedin.com/in/ben-gaines-82bb6349"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                          </li>
+                          <li>
+                              <a href="https://github.com/bengaines"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                          </li>
+                      </ul>
+                      <hr class="small">
+                      <p class="text-muted">built by me | Copyright &copy; 2017</p>
+                  </div>
+              </div>
+          </div>
+          <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+      </footer>
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
