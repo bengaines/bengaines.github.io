@@ -455,3 +455,49 @@ footer a:hover {
   bottom: 5px;
   right: 5px;
 }
+
+/*-----
+  -----
+        services.html
+  -----
+  -----
+*/
+
+.services-header {
+  background-color: #009688;
+}
+
+.services-header h1 {
+  color: #fff;
+  position: relative;
+  top: 70px;
+}
+
+/* ---- styling paragraphs ---- */
+.sections-page h4 {
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+
+/* ---- build-websites section ---- */
+.build-websites {
+  background-color: #4DB6AC;
+}
+
+.build-websites h2 {
+  padding-top: 75px;
+  color: #FFF;
+}
+
+.build-websites h2 span {
+  border-bottom: 1px solid #FFF;
+}
+
+
+.build-websites h4 {
+  color: #FFF;
+}
+
+h2 span.teal-underline {
+  border-bottom: 1px solid #20A294;
+}
