@@ -294,6 +294,7 @@ img.logo {
   color: #fff;
   text-align: center;
   font-size: 2rem;
+  white-space: nowrap;;
 }
 
 .header-phone a:hover {
