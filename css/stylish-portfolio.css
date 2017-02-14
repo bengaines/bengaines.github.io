@@ -279,7 +279,6 @@ img.logo {
   z-index: 1;
   margin-top: -22.5px;
   margin-left: -71.715px;
-  white-space: no-wrap;
 }
 
 /* shift phone # to the right  on screens >= 768px */
@@ -295,12 +294,15 @@ img.logo {
   color: #fff;
   text-align: center;
   font-size: 2rem;
-  white-space: nowrap;;
 }
 
 .header-phone a:hover {
   color: #FFD180;
   text-decoration: none;
+}
+
+span.no-wrap {
+  white-space: nowrap;
 }
 
 header .text-vertical-center h1 {
