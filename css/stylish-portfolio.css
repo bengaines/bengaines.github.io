@@ -301,7 +301,7 @@ img.logo {
   text-decoration: none;
 }
 
-span.no-wrap {
+.nobr {
   white-space: nowrap;
 }
 
