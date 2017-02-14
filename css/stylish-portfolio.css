@@ -279,6 +279,7 @@ img.logo {
   z-index: 1;
   margin-top: -22.5px;
   margin-left: -71.715px;
+  white-space: no-wrap;
 }
 
 /* shift phone # to the right  on screens >= 768px */
