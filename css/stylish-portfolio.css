@@ -520,15 +520,18 @@ img.logo-services {
   color: #fff;
   position: relative;
   top: 70px;
+  left: -19.5px;
 }
 
 /* ---- styling paragraphs ---- */
+
 .sections-page h4 {
   line-height: 150%;
   letter-spacing: 1px;
 }
 
 /* ---- build-websites section ---- */
+
 .build-websites {
   background-color: #4DB6AC;
 }
@@ -538,8 +541,9 @@ img.logo-services {
   color: #FFF;
 }
 
-.build-websites h2 span {
+h2 span.white-underline {
   border-bottom: 1px solid #FFF;
+  color: #FFF;
 }
 
 
@@ -549,4 +553,21 @@ img.logo-services {
 
 h2 span.teal-underline {
   border-bottom: 1px solid #20A294;
+}
+
+/* ---- content-creation section ---- */
+
+.content-creation {
+  background: url(../img/slr-camera.jpeg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size:cover;
+  -o-background-size: cover;
+}
+
+.dark-filter {
+  overflow: auto;
+  background: #000;
+  opacity: 0.8;
+  color: #FFF;
 }
