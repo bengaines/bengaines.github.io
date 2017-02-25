@@ -311,6 +311,19 @@ header .text-vertical-center h1 {
   letter-spacing: 1px;
 }
 
+/* Landscape iphone 5 header content */
+@media only screen
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      #header-content {
+        display: block;
+        padding-top: 100px;
+        vertical-align: baseline;
+      }
+
+}
+
 @media (min-width: 700px) {
   header .text-vertical-center h1 {
     font-size: 5rem;
