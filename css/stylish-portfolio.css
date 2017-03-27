@@ -66,6 +66,10 @@ hr.small {
     max-width: 100px;
 }
 
+.navbar-nav {
+  -webkit-backface-visibility: hidden; /* Fix navbar flash wrong styles while page is loading */
+}
+
 /* ----- Large Screen Navigation ----- */
 
 #large-screen-nav {
